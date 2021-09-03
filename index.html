@@ -1,0 +1,135 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+    <body style='margin : 0px; overflow: hidden;'>
+        <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
+        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_5_5;'
+                 renderer="antialias: true; logarithmicDepthBuffer: true; colorManagement: true; sortObjects: true;">
+
+        <a-assets>
+            <a-asset-item id="ma0255" src="https://raw.githubusercontent.com/clon139755/FNA/master/modelos/MA0255.glb"></a-asset-item>
+            <a-asset-item id="ma0514" src="https://raw.githubusercontent.com/clon139755/FNA/master/modelos/MA0514.glb"></a-asset-item>
+            <a-asset-item id="ma0576" src="https://raw.githubusercontent.com/clon139755/FNA/master/modelos/MA0576.glb"></a-asset-item>
+            <a-asset-item id="ma0774" src="https://raw.githubusercontent.com/clon139755/FNA/master/modelos/MA0774.glb"></a-asset-item>
+            <a-asset-item id="ma0919" src="https://raw.githubusercontent.com/clon139755/FNA/master/modelos/MA0919.glb"></a-asset-item>
+            <a-asset-item id="ma10241" src="https://raw.githubusercontent.com/clon139755/FNA/master/modelos/MA10241.glb"></a-asset-item>
+            <a-asset-item id="ma0337" src="https://raw.githubusercontent.com/clon139755/FNA/master/modelos/MA0337.glb"></a-asset-item>
+            <a-asset-item id="ma0104" src="https://raw.githubusercontent.com/clon139755/FNA/master/modelos/MA0104.glb"></a-asset-item>
+            <a-asset-item id="ma6086" src="https://raw.githubusercontent.com/clon139755/FNA/master/modelos/MA6086.glb"></a-asset-item>
+            <a-asset-item id="ma0482" src="https://raw.githubusercontent.com/clon139755/FNA/master/modelos/MA0482.glb"></a-asset-item>
+            <a-asset-item id="ma5456" src="https://raw.githubusercontent.com/clon139755/FNA/master/modelos/MA5456.glb"></a-asset-item>
+            <a-asset-item id="ma0348" src="https://raw.githubusercontent.com/clon139755/FNA/master/modelos/MA0348.glb"></a-asset-item>
+            <a-asset-item id="ma0480" src="https://raw.githubusercontent.com/clon139755/FNA/master/modelos/MA0480.glb"></a-asset-item>
+            <a-asset-item id="ma6048" src="https://raw.githubusercontent.com/clon139755/FNA/master/modelos/MA6048.glb"></a-asset-item>
+        </a-assets>
+
+        <a-marker id="animated-marker1" type='barcode' value='1'>
+            <a-entity
+                gltf-model="#ma0255"
+                scale="2 2 2">
+            </a-entity>
+        </a-marker>
+
+        <a-marker id="animated-marker2" type='barcode' value='2'>
+            <a-entity
+                gltf-model="#ma0514"
+                scale="4 4 4"
+                rotation="270 0 0">
+            </a-entity>
+        </a-marker>
+            
+        <a-marker id="animated-marker3" type='barcode' value='3'>
+            <a-entity
+                gltf-model="#ma10241"
+                scale="1 1 1">
+            </a-entity>
+        </a-marker>
+        
+        <a-marker id="animated-marker4" type='barcode' value='4'>
+            <a-entity
+                gltf-model="#ma0576"
+                scale="1 1 1">
+            </a-entity>
+        </a-marker>
+            
+        <a-marker id="animated-marker5" type='barcode' value='5'>
+            <a-entity
+                gltf-model="#ma0774"
+                scale="2 2 2">
+            </a-entity>
+        </a-marker>
+            
+        <a-marker id="animated-marker6" type='barcode' value='6'>
+            <a-entity
+                gltf-model="#ma0919"
+                scale="2 2 2">
+            </a-entity>
+        </a-marker>
+
+        <a-marker id="animated-marker7" type='barcode' value='7'>
+            <a-entity
+                gltf-model="#ma0337"
+                scale="2 2 2">
+            </a-entity>
+        </a-marker>
+        
+        <a-marker id="animated-marker8" type='barcode' value='8'>
+            <a-entity
+                gltf-model="#ma0104"
+                scale="2 2 2">
+            </a-entity>
+        </a-marker>
+        
+        <a-marker id="animated-marker9" type='barcode' value='9'>
+            <a-entity
+                gltf-model="#ma6086"
+                scale="2 2 2">
+            </a-entity>
+        </a-marker>
+            
+        <a-marker id="animated-marker10" type='barcode' value='10'>
+            <a-entity
+                gltf-model="#ma0482"
+                scale="2 2 2">
+            </a-entity>
+        </a-marker>
+            
+        <a-marker id="animated-marker11" type='barcode' value='11'>
+            <a-entity
+                gltf-model="#ma5456"
+                scale="2 2 2">
+            </a-entity>
+        </a-marker>
+            
+        <a-marker id="animated-marker12" type='barcode' value='12'>
+            <a-entity
+                gltf-model="#ma0348"
+                scale="2 2 2">
+            </a-entity>
+        </a-marker>
+            
+        <a-marker id="animated-marker13" type='barcode' value='13'>
+            <a-entity
+                gltf-model="#ma0480"
+                scale="2 2 2">
+            </a-entity>
+        </a-marker>
+            
+        <a-marker id="animated-marker14" type='barcode' value='14'>
+            <a-entity
+                gltf-model="#ma6048"
+                scale="2 2 2">
+            </a-entity>
+        </a-marker>
+
+
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
